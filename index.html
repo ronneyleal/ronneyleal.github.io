@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnalyzeX</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-link">
+            <img class="logo" src="/img/logo.png" alt="">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#início" class="active">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+    
+    <!-- inicio section -->
+    <section class="home" id="home">
+        <video class="video" autoplay loop muted plays-inline>
+            <source src="/img/bg-loop.mp4" type="video/mp4">
+        </video>
+        <div class="home-content">
+            <img class="home-img" src="/img/logo1.png" alt="">
+            <h3><span>Decifrando dados!</span></h3>
+            <!-- <h3><span>Orientando visões!</span></h3>
+            <h3><span>Impulsionando resultados!</span></h3> -->
+            <p>Transformando dados em decisões estratégicas para impulsionar o seu sucesso.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <div class="home-animation" id="animation">
+            <!-- <img src="/img/logo1.png" alt=""> -->
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation'),
+                    path: '/img/animation.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'animation'
+                })
+            </script>
+        </div>
+    </section>
+
+    <!-- sobre section -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-content">
+            <h2 class="heading">Desvendando <span>Insights</span> para o sucesso empresarial</h2>
+            <div class="line"></div>
+            <p>A análise de dados tornou-se um pilar essencial para o sucesso empresarial na era digital, proporcionando às organizações uma visão profunda e informada sobre seus processos, clientes e operações. Este processo transforma dados brutos em informações valiosas, abrindo portas para decisões mais precisas e estratégias mais eficazes.</p>
+            <h2 class="heading">O que é <span>Análise de Dados</span> ?</h2>
+            <div class="line"></div>
+            <p>A análise de dados refere-se à inspeção, limpeza e modelagem de dados para descobrir informações úteis, apoiar a tomada de decisões e revelar padrões ocultos. Utilizando ferramentas avançadas como o Power BI, as empresas podem explorar grandes conjuntos de dados de maneira eficiente, transformando números em narrativas inteligíveis. </p>
+            <div class="sobre-container">
+                <div class="sobre-box">
+                    <img src="/icons/tomando-uma-decisao.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Tomada de Decisão Informada</h3>
+                    <p>A análise de dados capacita líderes a tomar decisões fundamentadas, baseadas em evidências concretas e não apenas em intuições.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/conquista.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Identificar Oportunidades de Crescimento</h3>
+                    <p>Revela tendências e oportunidades de mercado, permitindo que as empresas se adaptem e inovem para se manterem à frente da concorrência.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/eficiencia.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Eficiência Operacional Aprimorada</h3>
+                    <p>Identifica processos ineficientes, redundâncias e áreas de melhoria, resultando em operações mais eficientes e economias de custos.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/acordo.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Compreensão Profunda do Cliente</h3>
+                    <p>Permite a criação de perfis de clientes detalhados, personalizando ofertas e melhorando a satisfação do cliente.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/analise-de-previsao.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Previsão e Antecipação de Tendências</h3>
+                    <p>Utilizando análises preditivas, as empresas podem antecipar tendências de mercado, comportamento do cliente e demanda futura.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/fraude.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Detecção de Anomalias e Fraudes</h3>
+                    <p>Identifica padrões suspeitos ou atividades anômalas, contribuindo para a segurança financeira e proteção contra fraudes.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/boa-qualidade.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Melhoria na Qualidade dos Produtos/Serviços</h3>
+                    <p>Feedbacks e dados de uso podem ser analisados para aprimorar a qualidade e funcionalidade dos produtos ou serviços oferecidos.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/painel.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Relatórios Visuais Impactantes</h3>
+                    <p>Ferramentas como o <span>Power BI</span> permitem a criação de dashboards visuais e relatórios interativos, facilitando a compreensão e comunicação dos dados.</p>
+                </div>
+                <div class="sobre-box">
+                    <img src="/icons/indicador-de-desempenho.png" alt="" class="img-box">
+                    <div class="line"></div>
+                    <h3>Avaliação de Desempenho</h3>
+                    <p>A análise de dados permite uma avaliação contínua do desempenho empresarial, identificando áreas fortes e pontos de melhoria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- serviços section -->
+    <section class="servicos" id="servicos">
+        <h2 class="heading">O que Entregamos nos  <span>Nossos Serviços</span> ?</h2>
+        <div class="line"></div>
+        <div class="timeline">
+            <div class="tl-container left-container">
+                <img src="/img/circle1.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Desenvolvimento de Dashboards Personalizados</h3>
+                    <div class="line"></div>
+                    <p>Criação de dashboards específicos para as necessidades e objetivos únicos de cada cliente, utilizando as capacidades avançadas do Power BI para visualizações impactantes.</p>
+                </div>
+            </div>
+            <div class="tl-container right-container">
+                <img src="/img/circle2.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Gestão de KPIs</h3>
+                    <div class="line"></div>
+                    <p>Desenvolvimento de painéis específicos para monitoramento de indicadores-chave de desempenho (KPIs) e métricas essenciais para o sucesso do negócio.</p>
+                </div>
+            </div>
+            <div class="tl-container left-container">
+                <img src="/img/circle3.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Consultoria em Power BI</h3>
+                    <div class="line"></div>
+                    <p>Orientação especializada para ajudar os clientes a entenderem como o Power BI pode ser melhor integrado aos seus processos de negócios, maximizando os benefícios.</p>
+                </div>
+            </div>
+            <div class="tl-container right-container">
+                <img src="/img/circle4.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Treinamento e Capacitação</h3>
+                    <div class="line"></div>
+                    <p>Oferta de cursos e treinamentos personalizados para capacitar equipes a utilizar efetivamente o Power BI, desde o básico até técnicas avançadas.</p>
+                </div>
+            </div>
+            <div class="tl-container left-container">
+                <img src="/img/circle5.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Integração de Dados</h3>
+                    <div class="line"></div>
+                    <p>Configuração de processos de integração para consolidar dados de diferentes fontes, garantindo consistência e acessibilidade.</p>
+                </div>
+            </div>
+            <div class="tl-container right-container">
+                <img src="/img/circle6.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Otimização de Desempenho</h3>
+                    <div class="line"></div>
+                    <p>Revisão e otimização de relatórios e dashboards existentes para garantir que estejam funcionando de maneira eficiente e rápida.</p>
+                </div>
+            </div>
+            <div class="tl-container left-container">
+                <img src="/img/circle7.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Automatização de Relatórios</h3>
+                    <div class="line"></div>
+                    <p>Desenvolvimento de processos automatizados para a geração regular de relatórios, economizando tempo e reduzindo erros manuais.</p>
+                </div>
+            </div>
+            <div class="tl-container right-container">
+                <img src="/img/circle8.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Suporte Técnico Contínuo</h3>
+                    <div class="line"></div>
+                    <p>Oferta de suporte técnico para resolver problemas, esclarecer dúvidas e garantir a manutenção eficaz das soluções implementadas.</p>
+                </div>
+            </div>
+            <div class="tl-container left-container">
+                <img src="/img/circle9.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Auditoria e Análise de Qualidade de Dados</h3>
+                    <div class="line"></div>
+                    <p>Avaliação da qualidade dos dados existentes, identificando e corrigindo inconsistências para assegurar a confiabilidade das análises.</p>
+                </div>
+            </div>
+            <div class="tl-container right-container">
+                <img src="/img/circle10.png" alt="">
+                <div class="tl-text-box">
+                    <h3>Segurança e Conformidade</h3>
+                    <div class="line"></div>
+                    <p>Implementação de medidas de segurança de dados e garantia de conformidade com regulamentações para proteger informações sensíveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projetos" id="projetos">
+        <h2 class="heading">Alguns dos nossos  <span>Projetos</span></h2>
+        <div class="line"></div>
+        <div class="projetos-container">
+            <div class="projetos-box">
+                <img src="/img/bi1.png" alt="">
+                <div class="projetos-layer">
+                    <h4>Relatório de vendas</h4>
+                    <p>Relatório de vendas simulando uma base de dados de uma concessionária de veículos</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODUzNWM2OTgtMzViNy00ZGFkLWI2MTgtMjA5NmEyZjRlYzFiIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projetos-box">
+                <img src="/img/bi2.png" alt="">
+                <div class="projetos-layer">
+                    <h4>Relatório de Estoque</h4>
+                    <p>Relatório de estoque simulando uma base de dados de uma loja</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projetos-box">
+                <img src="/img/bi3.png" alt="">
+                <div class="projetos-layer">
+                    <h4>Relatório Financeiro </h4>
+                    <p>Relatório financeiro simulando uma base de dados de uma loja</p>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <h2 class="heading">FAQ</h2>
+        <div class="line"></div>
+        <h3 class="heading">Dúvidas <span>Frequentes</span></h3>
+        <div class="faq-container">
+            <div class="faq-accordion">
+                <div class="faq-accordion-item" id="questao1">
+                    <a class="accordion-link" href="#questao1">
+                        O que é análise de dados e como pode beneficiar minha empresa?  
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            A análise de dados é o processo de examinar, limpar, transformar e modelar dados com o objetivo de descobrir informações úteis, padrões e tendências. Ela pode beneficiar sua empresa fornecendo insights acionáveis para tomada de decisões mais informadas, identificação de oportunidades de negócios, otimização de processos e melhor compreensão dos clientes.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao2">
+                    <a class="accordion-link" href="#questao2">
+                        Como o Power BI se diferencia de outras ferramentas de análise de dados?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            O Power BI se destaca por sua facilidade de uso, ampla gama de fontes de dados suportadas, capacidade de criar visualizações interativas e compartilháveis, integração com outras ferramentas Microsoft e sua capacidade de escalar para atender às necessidades de grandes empresas.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao3">
+                    <a class="accordion-link" href="#questao3">
+                        Quais são os principais recursos e funcionalidades do Power BI que sua empresa oferece?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Nossa empresa oferece serviços completos de análise de dados utilizando o Power BI, incluindo criação de relatórios personalizados, modelagem de dados, integração de fontes de dados, visualizações interativas, painéis de controle, compartilhamento e colaboração. 
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao4">
+                    <a class="accordion-link" href="#questao4">
+                        Como funciona o processo de criação de relatórios com o Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            O processo geralmente envolve a identificação das necessidades de análise, coleta e preparação de dados, modelagem dos dados conforme necessário, criação de visualizações e relatórios, e finalmente, compartilhamento e implantação dos relatórios para os usuários finais.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao5">
+                    <a class="accordion-link" href="#questao5">
+                        Quais tipos de dados podem ser visualizados e analisados usando o Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            O Power BI pode lidar com uma ampla variedade de fontes de dados, incluindo bancos de dados relacionais, arquivos CSV, Excel, serviços na nuvem como o Azure, serviços web, entre outros. Dados estruturados e semiestruturados podem ser visualizados e analisados.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao6">
+                    <a class="accordion-link" href="#questao6">
+                        A minha empresa precisa ter conhecimento técnico para usar o Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Embora algum conhecimento técnico possa ser útil, não é estritamente necessário. Nossa equipe pode fornecer suporte e treinamento para ajudar sua empresa a aproveitar ao máximo o Power BI, independentemente do nível de experiência técnica.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao7">
+                    <a class="accordion-link" href="#questao7">
+                        Como são personalizados os relatórios de acordo com as necessidades específicas da minha empresa?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Nossos especialistas em análise de dados trabalham em estreita colaboração com sua empresa para entender suas necessidades específicas de relatórios. Os relatórios são então personalizados de acordo com seus requisitos exclusivos de negócios, incluindo tipos de visualizações, métricas-chave e formatos de relatórios.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao8">
+                    <a class="accordion-link" href="#questao8">
+                        Vocês oferecem suporte ou treinamento para utilização do Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Sim, oferecemos suporte abrangente e treinamento para ajudar sua equipe a utilizar efetivamente o Power BI. Isso inclui treinamento inicial, suporte contínuo e recursos de aprendizado online para ajudar sua equipe a se tornar proficientes no uso da ferramenta.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao9">
+                    <a class="accordion-link" href="#questao9">
+                        Quais são os custos envolvidos na contratação dos serviços de análise de dados com o Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Os custos podem variar dependendo do escopo e da complexidade do projeto. Entre em contato conosco para discutir suas necessidades específicas e receber uma cotação personalizada.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao10">
+                    <a class="accordion-link" href="#questao10">
+                        Quanto tempo leva para desenvolver e implementar relatórios utilizando o Power BI?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            O tempo necessário pode variar com base na complexidade dos requisitos do relatório e na disponibilidade de dados. Nossa equipe trabalhará diligentemente para desenvolver e implementar os relatórios dentro de prazos razoáveis, garantindo a qualidade e a precisão dos resultados. 
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-accordion-item" id="questao11">
+                    <a class="accordion-link" href="#questao11">
+                        Como são mantidos e atualizados os relatórios ao longo do tempo?
+                        <i class='bx bx-plus'></i>
+                        <i class='bx bx-minus'></i>
+                    </a>
+                    <div class="line"></div>
+                    <div class="resposta">
+                        <p>
+                            Nossa equipe monitora continuamente os relatórios para garantir que permaneçam precisos e relevantes. Atualizações regulares são feitas conforme necessário para refletir mudanças nos dados ou requisitos de negócios da sua empresa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
