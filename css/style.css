@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     /* max-width: 1200px; */
@@ -9,7 +11,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
 }
 
@@ -23,12 +25,16 @@
     --primary-color: #0B696E;
     --secondary-color: #29dacf;
 
-    --font-menu: 1.6rem;
+    --font-menu: 1.4rem;
     --font-h1: 4rem;
     --font-h2: 3rem;
-    --font-h3: 2.5rem;
+    --font-h3: 2.8rem;
     --font-h4: 2rem;
+    --font-h5: 1.6rem;
     --font-p: 1.4rem;
+    --font-montserrat: 'Montserrat';
+    --font-encode: 'Encode Sans Expanded';
+    --font-poppins: 'Poppins';
 }
 
 html {
@@ -63,8 +69,6 @@ section {
     width: 100%; 
     height: 10rem;
     padding: 1rem 10rem 1rem;
-    /* background: rgba(0,0,0,0.8); */
-    /* box-shadow: 0 0 2.5rem 1rem var(--secondary-color); */
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -85,17 +89,25 @@ section {
 .navbar a {
     position: relative;
     font-size: var(--font-menu);
+    font-family: var(--font-montserrat);
+    text-transform: uppercase;
     color: var(--white-color);
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 2rem;
     transition: .3s;
     padding: 0 1rem;
 }
 
+.navbar a:nth-child(5) {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    border-radius: .8rem;
+    padding: .3rem 2rem;
+}
+
 .navbar a::after {
     content: "";
     position: absolute;
-    /* background-color: var(--secondary-color); */
     background: linear-gradient(to right, rgba(255,0,0,0), var(--secondary-color), rgba(255,0,0,0));
     height: 3px;
     width: 0;
@@ -114,6 +126,10 @@ section {
     color: var(--secondary-color);
 }
 
+.navbar a:nth-child(5):hover {
+    color: var(--white-color);
+}
+
 #menu-icon{
     font-size: 3.5rem;
     color: var(--secondary-color);
@@ -127,6 +143,7 @@ section {
 }
 
 .home-content h3 {
+    font-family: var(--font-encode);
     font-size: var(--font-h3);
     font-weight: 700;
     color: var(--secondary-color);
@@ -137,6 +154,7 @@ section {
 }
 
 .home-content span {
+    font-family: var(--font-encode);
     font-size: var(--font-h3);
     font-weight: 700;
     color: var(--secondary-color);
@@ -144,13 +162,16 @@ section {
 }
 
 .home-content h1 {
+    font-family: var(--font-encode);
     font-size: var(--font-h1);
     font-weight: 700;
     line-height: 1.3;
 }
 
 .home-content p {
-    font-size: var(--font-p);
+    font-family: var(--font-poppins);
+    margin-top: 1.5rem;
+    font-size: var(--font-h5);
     font-weight: 400;
 }
 
@@ -199,6 +220,7 @@ section {
 }
 
 .sobre-content h2 {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 500;
     line-height: 1.2;
@@ -206,6 +228,7 @@ section {
 }
 
 .sobre-content span {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 600;
     line-height: 1.2;
@@ -217,14 +240,17 @@ section {
 height: 3px;
 background: linear-gradient(to right, rgba(255,0,0,0), var(--secondary-color), rgba(255,0,0,0));
 border-radius: 5px;
+margin-top: .5rem;
 margin-bottom: 2rem;
 }
 
 .sobre-content p {
+    font-family: var(--font-poppins);
     font-size: var(--font-p);
     margin-bottom: 2rem;
     text-align: justify;
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .sobre-container {
@@ -262,6 +288,7 @@ margin-bottom: 2rem;
 }
 
 .sobre-box h3 {
+    font-family: var(--font-encode);
     flex: 1;
     font-size: var(--font-menu);
     font-weight: 500;
@@ -270,13 +297,16 @@ margin-bottom: 2rem;
 }
 
 .sobre-box p {
+    font-family: var(--font-poppins);
     flex: 2;
     font-size: var(--font-p);
     text-align: center;
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .sobre-box p span {
+    font-family: var(--font-poppins);
     font-size: var(--font-menu);
     font-weight: 500;
     color: var(--secondary-color);
@@ -288,6 +318,7 @@ margin-bottom: 2rem;
 }
 
 .servicos h2 {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 500;
     line-height: 1.2;
@@ -295,6 +326,7 @@ margin-bottom: 2rem;
 }
 
 .servicos span {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 600;
     line-height: 1.2;
@@ -308,6 +340,7 @@ margin-bottom: 2rem;
 }
 
 .timeline h3 {
+    font-family: var(--font-encode);
     font-size: 2rem;
     font-weight: 600;
     color: var(--secondary-color);
@@ -315,9 +348,11 @@ margin-bottom: 2rem;
 }
 
 .timeline p {
+    font-family: var(--font-poppins);
     font-size: var(--font-p);
     text-align: center;
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .tl-container {
@@ -463,6 +498,7 @@ margin-bottom: 2rem;
 }
 
 .projetos h2 {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 500;
     line-height: 1.2;
@@ -470,6 +506,7 @@ margin-bottom: 2rem;
 }
 
 .projetos span {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 600;
     line-height: 1.2;
@@ -523,6 +560,7 @@ margin-bottom: 2rem;
 }
 
 .projetos-layer h4 {
+    font-family: var(--font-encode);
     font-size: var(--font-h3);
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -530,8 +568,10 @@ margin-bottom: 2rem;
 }
 
 .projetos-layer p {
+    font-family: var(--font-poppins);
     font-size: var(--font-menu);
     font-weight: 400;
+    line-height: 1.8;
 }
 
 .projetos-layer a {
@@ -556,6 +596,7 @@ margin-bottom: 2rem;
 }
 
 .faq h2 {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 500;
     line-height: 1.2;
@@ -563,6 +604,7 @@ margin-bottom: 2rem;
 }
 
 .faq h3 {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 500;
     line-height: 1.2;
@@ -570,6 +612,7 @@ margin-bottom: 2rem;
 }
 
 .faq span {
+    font-family: var(--font-encode);
     font-size: var(--font-h2);
     font-weight: 600;
     line-height: 1.2;
@@ -600,7 +643,7 @@ margin-bottom: 2rem;
 }
 
 .accordion-link {
-    font-size: var(--font-menu);
+    font-size: var(--font-h5);
     font-weight: 500;
     /* text-transform: uppercase; */
     line-height: 1.2;
@@ -645,8 +688,10 @@ margin-bottom: 2rem;
 }
 
 .resposta p {
+    font-family: var(--font-poppins);
     font-size: var(--font-p);
     padding: 1rem 2rem;
+    line-height: 1.8;
 }
 
 .faq-accordion-item:target .resposta {
