@@ -15,13 +15,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo-link">
+    <header class="header" id="nav-bar">
+        <a href="#home" class="logo-link">
             <img class="logo" src="/img/logo.png" alt="">
         </a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#início" class="active">Início</a>
+            <a href="#home" class="active">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
             <a href="#projetos">Projetos</a>
@@ -36,15 +36,13 @@
         </video>
         <div class="home-content">
             <img class="home-img" src="/img/logo1.png" alt="">
-            <h3><span>Decifrando dados!</span></h3>
-            <!-- <h3><span>Orientando visões!</span></h3>
-            <h3><span>Impulsionando resultados!</span></h3> -->
+            <h3><span class="multiple-text"></span></h3>
             <p>Transformando dados em decisões estratégicas para impulsionar o seu sucesso.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5589981192963&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20meu%20negócio." target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://www.instagram.com/analyzex.pi/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/ronneyleal/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.youtube.com/@analyzex-pi" target="_blank"><i class='bx bxl-youtube' ></i></a>
             </div>
         </div>
         <div class="home-animation" id="animation">
@@ -226,7 +224,8 @@
                 <div class="projetos-layer">
                     <h4>Relatório de vendas</h4>
                     <p>Relatório de vendas simulando uma base de dados de uma concessionária de veículos</p>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODUzNWM2OTgtMzViNy00ZGFkLWI2MTgtMjA5NmEyZjRlYzFiIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODUzNWM2OTgtMzViNy00ZGFkLWI2MTgtMjA5NmEyZjRlYzFiIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9"
+                    target="_blank">
                         <i class='bx bx-link-external'></i>
                     </a>
                 </div>
@@ -236,7 +235,8 @@
                 <div class="projetos-layer">
                     <h4>Relatório de Estoque</h4>
                     <p>Relatório de estoque simulando uma base de dados de uma loja</p>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9"
+                    target="_blank">
                         <i class='bx bx-link-external'></i>
                     </a>
                 </div>
@@ -246,7 +246,8 @@
                 <div class="projetos-layer">
                     <h4>Relatório Financeiro </h4>
                     <p>Relatório financeiro simulando uma base de dados de uma loja</p>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODE3YjM4MWItYzUyZS00ZmIwLTlhMTItODQ4M2Y0ZmQ1OWQxIiwidCI6IjdhZDJiNDk1LWZjMmEtNDQ0Mi04NTgzLWNhZmY2NjlkOWQ4ZSJ9"
+                    target="_blank">
                         <i class='bx bx-link-external'></i>
                     </a>
                 </div>
@@ -405,14 +406,21 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+    <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 by <span>Ronney Leal</span> | All Rights Reserved.</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home<i class='bx bxs-up-arrow-circle' ></i>"></a>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
-    </section>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
     <!-- javascript -->
     <script src="js/script.js"></script>
 </body>
