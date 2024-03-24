@@ -43,15 +43,15 @@ window.onscroll = () => {
 // scroll reveal
 ScrollReveal({ 
     reset: true,
-    distance: '80px',
+    distance: '50px',
     duration: 2000,
     delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .sobre-box img, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-animation, .sobre-container, .servicos-container, .projetos-box, .faq-accordion-item', {origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .sobre-box h3, .left-container .tl-text-box h3, .left-container .tl-text-box p, .footer-text', {origin: 'left'});
-ScrollReveal().reveal('.home-content p, .sobre-box p, .right-container .tl-text-box h3, .right-container .tl-text-box p, .footer-iconTop', {origin: 'right'});
+ScrollReveal().reveal('.home-content h1, .sobre-box h3, .left-container .tl-text-box h3, .left-container .tl-text-box p', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .sobre-box p, .right-container .tl-text-box h3, .right-container .tl-text-box p', {origin: 'right'});
 
 // typed js 
 const typed = new Typed ('.multiple-text', {
