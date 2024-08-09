@@ -295,6 +295,24 @@ section {
     margin-bottom: 6rem;
 }
 
+.analyzex .span-analyze {
+    font-size: var(--font-h5);
+    font-weight: 600;
+    color: var(--white-color)
+}
+
+.analyzex .span-x {
+    font-size: var(--font-h4);
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.analyzex .key-word {
+    font-size: var(--font-h5);
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
 .analyzex-content {
     display: flex;
     gap: 2rem;
