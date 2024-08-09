@@ -308,7 +308,7 @@ section {
 }
 
 .analyzex .key-word {
-    font-size: var(--font-h5);
+    font-size: var(--font-menu);
     font-weight: 600;
     color: var(--secondary-color);
 }
