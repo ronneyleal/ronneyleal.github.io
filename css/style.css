@@ -205,7 +205,7 @@ section {
 .home-content p {
     font-family: var(--font-poppins);
     margin-top: 1.5rem;
-    font-size: var(--font-h5);
+    font-size: var(--font-h4);
     font-weight: 400;
 }
 
@@ -260,6 +260,84 @@ section {
     box-shadow: 0 0 1rem var(--secondary-color);
 }
 
+.analyzex {
+    display: flex;
+    flex-direction: column;
+}
+
+.analyzex-content:last-child {
+    margin-bottom: 6rem;
+}
+
+.analyzex h2 {
+    font-family: var(--font-encode);
+    font-size: var(--font-h2);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.analyzex span {
+    font-family: var(--font-encode);
+    font-size: var(--font-h2);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.analyzex p {
+    font-family: var(--font-poppins);
+    font-size: var(--font-menu);
+    text-align: justify;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 6rem;
+}
+
+.analyzex-content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.ax-image img {
+    width: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.5rem var(--secondary-color);
+}
+
+.ax-image:nth-child(odd) {
+    margin-right: 5rem;
+    margin-left: 0;
+}
+
+.ax-image:nth-child(2) {
+    margin-right: 0;
+    margin-left: 5rem;
+}
+
+.ax-content h3 {
+    font-family: var(--font-encode);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.analyzex-content:nth-child(3) h3 {
+    text-align: right;
+}
+
+.ax-content p {
+    font-family: var(--font-poppins);
+    font-size: var(--font-menu);
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 2;
+}
+
 .sobre {
     display: flex;
     justify-content: center;
@@ -270,6 +348,15 @@ section {
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+.sobre-content .title {
+    font-family: var(--font-encode);
+    font-size: var(--font-h1);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+    text-align: center;
 }
 
 .sobre-content h2 {

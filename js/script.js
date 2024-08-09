@@ -48,7 +48,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .sobre-box img, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-content, .sobre-box img, .heading, .title' , {origin: 'top'});
 ScrollReveal().reveal('.home-animation, .sobre-container, .servicos-container, .projetos-box, .faq-accordion-item', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .sobre-box h3, .left-container .tl-text-box h3, .left-container .tl-text-box p', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .sobre-box p, .right-container .tl-text-box h3, .right-container .tl-text-box p', {origin: 'right'});
