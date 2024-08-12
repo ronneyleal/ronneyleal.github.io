@@ -1018,6 +1018,24 @@ margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px) {
+    .analyzex-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .analyzex-content:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ax-image:nth-child(odd), .ax-image:nth-child(2) {
+        margin: auto;
+    }
+
+    .ax-content h3 {
+        text-align: center;
+    }
+
     .timeline {
         margin: 1rem;
     }
